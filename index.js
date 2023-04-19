@@ -22,7 +22,7 @@ async function fun() {
         });
 
         const data = await con.execute(
-            'SELECT * FROM CONTINENT',
+            'select DATEPART(mm, C_Date) from KERUILIU.Crash where FID = 1;',
         );
 
     console.log(data.rows);
