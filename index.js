@@ -1,5 +1,13 @@
 const oracledb = require('oracledb');
+const express = require('express');
+const app = express();
+const PORT = 5000;
 oracledb.outFormat = oracledb.OUT_FORMAT_OBJECT;
+
+app.listen(PORT,
+    () => {
+        console.log(`listen to port ${PORT}`);
+    })
 
 async function fun() {
     let con;
